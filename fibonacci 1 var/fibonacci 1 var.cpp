@@ -2,12 +2,12 @@
 #include<cmath>
 
 int fibonacci(float n) {
-    if (n == 1) {
-        n = 2;
-    }
-    else if(n != 1) {
+    if(n > 0) {
         n = n + (n / ((1 + sqrt(5)) / 2));
         n = round(n);
+    }
+    else if (n <= 0){
+        n = 1;
     }
     return n;
 }
