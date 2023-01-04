@@ -16,7 +16,7 @@ int main()
 {
     float n{ 1 };
     std::cout << "0\n" << n << "\n" << n << "\n";
-    while (n < 63245986) {
+    while (n < 63245986) {//change this num to change how many are printed
         n = fibonacci(n);
         std::cout << n << "\n";
     }
